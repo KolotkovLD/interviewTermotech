@@ -2,7 +2,8 @@ def combine(keys, values):
     key_len = len(keys)
     value_len = len(values)
     if key_len > value_len:
-        for i in range(key_len-value_len):values.append(None)
+        for i in range(key_len-value_len):
+            values.append(None)
     return dict(zip(keys, values))
 
 
